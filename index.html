@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un mensaje especial de amor con flores amarillas - Para expresar mi amor de una manera única">
+    <meta name="theme-color" content="#fef9c3">
+    <meta property="og:title" content="Te Amo 3 Millones - Flores Amarillas">
+    <meta property="og:description" content="Un mensaje especial de amor con flores amarillas - Para expresar mi amor de una manera única">
+    <meta property="og:image" content="assets/images/imagen.jpg">
+    <meta property="og:url" content="https://tuusuario.github.io/te-amo-3-millones/">
+    <meta property="og:type" content="website">
+    <title>Te Amo 3 Millones</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles-js"></div>
+    
+    <div class="container animate__animated animate__fadeIn">
+        <header>
+            <h1 class="animate__animated animate__heartBeat animate__delay-1s">
+                Te amo 3 millones <span class="corazon" id="corazon">❤</span>
+            </h1>
+        </header>
+        
+        <main>
+            <div class="imagen-container animate__animated animate__zoomIn animate__delay-1s">
+                <div class="polaroid">
+                    <img src="assets/images/imagen.jpg" 
+                         alt="Flores amarillas"
+                         loading="lazy" 
+                         width="400" 
+                         height="300">
+                    <div class="caption">Para ti, siempre</div>
+                </div>
+            </div>
+            
+            <div class="mensaje-container">
+                <p class="mensaje animate__animated animate__fadeIn animate__delay-2s" id="mensaje">
+                    Aunque no tenga dinero, siempre tendrás tus flores amarillas
+                </p>
+                
+                <button id="btnCambiarMensaje" class="animate__animated animate__pulse animate__infinite">
+                    <i class="fas fa-heart"></i> Mostrar otro mensaje
+                </button>
+            </div>
+            
+            <div class="music-player animate__animated animate__fadeIn animate__delay-3s">
+                <h3><i class="fas fa-music"></i> Nuestra canción</h3>
+                <div class="spotify-embed-container">
+                    <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/track/04aBuWoZeHYJeDDTWYSgso?utm_source=generator&theme=0&start_time=0" 
+                            width="100%" 
+                            height="352" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Con todo mi amor, siempre para ti <i class="fas fa-heart"></i></p>
+            <p>© <span id="year">2025</span> | Hecho con <i class="fas fa-heart"></i> para ti</p>
+        </footer>
+    </div>
+    
+    <!-- Modal para la galería -->
+    <div id="galleryModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Imagen ampliada">
+        <div id="modalCaption"></div>
+        <a class="prev" id="prevBtn">&#10094;</a>
+        <a class="next" id="nextBtn">&#10095;</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
